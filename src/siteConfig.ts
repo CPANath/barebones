@@ -22,6 +22,10 @@ export const NAV_LINKS: NavigationLinks = {
     path: "/projects",
     label: "Projects",
   },
+    magnet: {
+    path: "/magnet",
+    label: "Magnet",
+  },
 };
 
 export const SOCIAL_LINKS: SocialLinks = {

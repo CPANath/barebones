@@ -14,21 +14,21 @@ export const SITE: SiteConfiguration = {
 };
 
 export const NAV_LINKS: NavigationLinks = {
-  blog: {
-    path: "/blog",
-    label: "Blog",
-  },
   chararctercounter: {
     path: "/charactercounter",
     label: "Character Counter",
+  },
+  magnet: {
+    path: "/magnet",
+    label: "Magnet",
   },
   projects: {
     path: "/projects",
     label: "Projects",
   },
-    magnet: {
-    path: "/magnet",
-    label: "Magnet",
+    blog: {
+    path: "/blog",
+    label: "Blog",
   },
 };
 

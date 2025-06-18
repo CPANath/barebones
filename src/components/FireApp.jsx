@@ -229,7 +229,7 @@ export default function FireApp() {
                     {/* Input Panel */}
                     <div className="lg:col-span-1">
                         <div className="bg-gray-200 rounded-lg shadow-lg p-6">
-                            <h2 className="text-xl  font-semibold mb-4 flex items-center gap-2">
+                            <h2 className="text-xl text-gray-700 font-semibold mb-4 flex items-center gap-2">
                                 <Calculator className="text-blue-600" />
                                 Your Financial Profile
                             </h2>

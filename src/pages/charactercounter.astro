@@ -1,0 +1,22 @@
+---
+import BaseLayout from "@/layouts/AppLayout.astro";
+import CharacterCounter from "@/components/CharacterCounter.jsx";
+
+import Introduction from "@/components/Introduction.astro";
+import CTA from "@/components/CTA.astro";
+import Posts from "@/components/Posts.astro";
+import Projects from "@/components/Projects.astro";
+import SeoPage from "@/components/SeoPage.astro";
+import SocialLinks from "@/components/SocialLinks.astro";
+---
+<BaseLayout>
+  <SeoPage slot="head" />
+  <div>
+    <div class="">
+      <CharacterCounter client:load onTextChange={() => {}} />
+      <div class="mt-8">
+        <SocialLinks />
+      </div>
+    </div>
+  </div>
+</BaseLayout>

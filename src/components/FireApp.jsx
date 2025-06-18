@@ -191,20 +191,20 @@ export default function FireApp() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+        <div className="min-h-screen p-4">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-8">
-                    <h1 className="text-4xl font-bold text-gray-800 mb-2 flex items-center justify-center gap-3">
+                    <h1 className="text-4xl font-bold text-white-800 mb-2 flex items-center justify-center gap-3">
                         <TrendingUp className="text-green-600" />
                         FIRE Calculator Pro
                     </h1>
-                    <p className="text-xl text-gray-600">Your path to Financial Independence, Retire Early</p>
+                    <p className="text-xl text-white-600">Your path to Financial Independence, Retire Early</p>
                 </div>
 
                 {/* Achievement Bar */}
-                <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-                    <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
+                <div className="bg-gray-200 rounded-lg shadow-lg p-6 mb-6">
+                    <h3 className="text-lg text-gray-700 font-semibold mb-4 flex items-center gap-2">
                         <Trophy className="text-yellow-500" />
                         Your Achievements
                     </h3>
@@ -228,8 +228,8 @@ export default function FireApp() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     {/* Input Panel */}
                     <div className="lg:col-span-1">
-                        <div className="bg-white rounded-lg shadow-lg p-6">
-                            <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                        <div className="bg-gray-200 rounded-lg shadow-lg p-6">
+                            <h2 className="text-xl  font-semibold mb-4 flex items-center gap-2">
                                 <Calculator className="text-blue-600" />
                                 Your Financial Profile
                             </h2>
@@ -385,8 +385,8 @@ export default function FireApp() {
                         </div>
 
                         {/* Progress Chart */}
-                        <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-                            <h3 className="text-lg font-semibold mb-4">Your Journey to FIRE</h3>
+                        <div className="bg-gray-200 rounded-lg shadow-lg p-6 mb-6">
+                            <h3 className="text-lg text-gray-700 font-semibold mb-4">Your Journey to FIRE</h3>
                             <ResponsiveContainer width="100%" height={300}>
                                 <AreaChart data={calculations.projections.slice(0, calculations.yearsToFire + 5)}>
                                     <CartesianGrid strokeDasharray="3 3" />
@@ -412,8 +412,8 @@ export default function FireApp() {
                         </div>
 
                         {/* Scenario Comparison */}
-                        <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-                            <h3 className="text-lg font-semibold mb-4">Scenario Analysis</h3>
+                        <div className="bg-gray-200 rounded-lg shadow-lg p-6 mb-6">
+                            <h3 className="text-lg text-gray-700 font-semibold mb-4">Scenario Analysis</h3>
                             <div className="flex gap-2 mb-4">
                                 {Object.entries(scenarios).map(([key, scenario]) => (
                                     <button
@@ -472,9 +472,9 @@ export default function FireApp() {
                         </div>
 
                         {/* Monte Carlo Toggle */}
-                        <div className="bg-white rounded-lg shadow-lg p-6">
+                        <div className="bg-gray-200 rounded-lg shadow-lg p-6">
                             <div className="flex items-center justify-between mb-4">
-                                <h3 className="text-lg font-semibold">Risk Analysis</h3>
+                                <h3 className="text-lg text-gray-700 font-semibold">Risk Analysis</h3>
                                 <button
                                     onClick={() => setShowMonteCarlo(!showMonteCarlo)}
                                     className={`px-4 py-2 rounded-lg font-medium ${showMonteCarlo

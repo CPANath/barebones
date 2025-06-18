@@ -18,6 +18,10 @@ export const NAV_LINKS: NavigationLinks = {
     path: "/blog",
     label: "Blog",
   },
+  chararctercounter: {
+    path: "/charactercounter",
+    label: "Character Counter",
+  },
   projects: {
     path: "/projects",
     label: "Projects",

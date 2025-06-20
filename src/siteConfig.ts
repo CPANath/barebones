@@ -22,6 +22,10 @@ export const NAV_LINKS: NavigationLinks = {
     path: "/magnet",
     label: "Magnet",
   },
+  sheetsimport: {
+    path: "/sheets-import",
+    label: "Sheets Import",
+  },
   projects: {
     path: "/projects",
     label: "Projects",

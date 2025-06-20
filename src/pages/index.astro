@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
+import Hero from "@/components/Hero.astro";
 import Introduction from "@/components/Introduction.astro";
 import CTA from "@/components/CTA.astro";
 import Posts from "@/components/Posts.astro";
@@ -12,6 +13,7 @@ import SocialLinks from "@/components/SocialLinks.astro";
 <BaseLayout>
   <SeoPage slot="head" />
   <div>
+    <Hero />
     <Introduction />
     <CTA />
     <hr

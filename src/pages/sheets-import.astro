@@ -1,0 +1,10 @@
+---
+import BaseLayout from "@/layouts/AppLayout.astro";
+import SheetsImportStatus from "@/components/SheetsImportStatus.jsx";
+import SeoPage from "@/components/SeoPage.astro";
+---
+
+<BaseLayout>
+  <SeoPage slot="head" title="Google Sheets Import" />
+  <SheetsImportStatus client:load />
+</BaseLayout>
